@@ -1,0 +1,29 @@
+.content {
+    color: white;
+    font: 22px "Anonymous Pro";
+}
+
+#root {
+    background-color: black;
+    border: 4px solid black;
+    transition: background-color 1s, border 1s;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: auto;
+}
+
+#child {
+    background-color: grey;
+    border: 4px solid grey;
+    transition: background-color 1s, border 1s;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px;
+    margin-top: 500px;
+}

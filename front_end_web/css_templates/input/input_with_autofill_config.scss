@@ -1,0 +1,30 @@
+/*
+* References:
+* https://github.com/PanJiaChen/vue-element-admin
+*/
+$color: #e0e;
+$cursor: #e0e;
+$bg: #fff;
+input {
+  /* size of input box */
+  height: 47px;
+  width: 85%;
+  padding: 12px 5px 12px 15px;
+  
+  /* display mode */
+  display: inline-block;
+  
+  /* outlook config */
+  background: transparent;
+  -webkit-appearance: none;
+  border: 0px;
+  border-radius: 0px;
+  color: $color;
+  caret-color: $cursor;
+
+  /* outlook after autofilled */
+  &:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px $bg inset !important;
+    -webkit-text-fill-color: $cursor !important;
+  }
+}

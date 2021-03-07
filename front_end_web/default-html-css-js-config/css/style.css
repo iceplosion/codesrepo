@@ -1,0 +1,12 @@
+.obj {
+  /* size */
+  height: 600px;
+  width: 320px;
+
+  /* color */
+  background: rgba(110, 20, 30, 1);
+
+  /* border */
+  border: 4px solid blue;
+  border-radius: 3px;
+}
