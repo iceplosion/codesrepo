@@ -1,0 +1,64 @@
+% An example of simple document
+% See details of paper size in the following web:
+% https://www.overleaf.com/learn/latex/Page_size_and_margins
+\documentclass[12pt]{article}
+% encoding in UTF8
+\usepackage[UTF8]{ctex}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\graphicspath{ {images/} }
+ 
+\title{演示文档}
+\author{演示作者 \thanks{原始模板从 \texttt{https://www.overleaf.com/learn/latex/Learn\_LaTeX\_in\_30\_minutes} 提供的模板修改而来} }
+\date{2021.6.19}
+
+\begin{document}
+
+\maketitle
+ 
+We have now added a title, author and date to our first \LaTeX{} document!
+
+This is \textbf{bold}. \textbf{ \emph{Emphasizing} in bold.}
+
+This is \textit{italics}. \textit{ \emph{Emphasizing} in italics.}
+
+This is \underline{underline}. \emph{Emphasizing} in default.
+
+中文文本。中文文本。
+
+图片测试：
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.25\textwidth]{cornell_box.jpg}
+\caption{Cornell box}
+\label {fig:box}
+\end{figure}
+
+如图\ref{fig:box}所示是 Cornell box。
+
+无序列表：
+
+\begin{itemize}
+    \item 列表项其一；
+    \item 列表项其二；
+    \item 列表项其三。
+\end{itemize}
+
+有序列表：
+
+\begin{enumerate}
+  \item 列表项1；
+  \item 列表项2.
+\end{enumerate}
+
+公式测试：
+
+\begin{equation}
+    1 + 1 = 2
+\end{equation}
+
+另一个公式：
+
+\[ \int_0^1 \frac{dx}{e^x} =  \frac{e-1}{e} \]
+
+\end{document}
